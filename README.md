@@ -1,5 +1,5 @@
 ## **build-canvas-app** 
-Is a simple NPM package that generates the basic template for any Canvas App.
+A simple NPM package that generates the basic template for any Canvas App.
 
 ## To install:
   run `npm install -g build-canvas-app`
