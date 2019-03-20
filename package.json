@@ -1,0 +1,15 @@
+{
+  "name": "build-canvas-app",
+  "version": "1.3.0",
+  "description": "A Canvas App generator",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "build-canvas-app": "./index.js"
+  },
+  "keywords": [],
+  "author": "Fahad Haidari",
+  "license": "ISC"
+}
