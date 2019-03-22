@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
-((_path) => {
+(() => {
   const fs = require("fs");
+  const dir_name = process.argv.slice(2)[0] || "canvas-app";
 
   const files = [
     {
@@ -67,12 +68,12 @@
     }
   };
 
-  deleteFolderRecursive(_path);
+  deleteFolderRecursive(dir_name);
 
-  fs.mkdirSync(_path);
+  fs.mkdirSync(dir_name);
   files.forEach(file => {
-    fs.appendFile(`./canvas-app/${file.name}`, file.content, function (err) {
+    fs.appendFile(`./${dir_name}/${file.name}`, file.content, function (err) {
       if (err) throw err;
     });
   });
-})("./canvas-app");
+})();

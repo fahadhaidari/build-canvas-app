@@ -7,6 +7,6 @@ A simple NPM package that generates the basic template for any Canvas App.
 ## To use:
   In the desired directory
 
-  run `build-canvas-app`
+  run `build-canvas-app app-name`
 
   It will create a **canvas-app** directory.
