@@ -8,49 +8,49 @@
     {
       name: "index.html",
       content: `
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <title>Canvas App Template</title>
-          </head>
-          <body>
-            <canvas id="canvas"></canvas>
-            <script src="index.js"></script>
-          </body>
-        </html>`
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Canvas App Template</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>`
     },
     {
       name: "index.js",
       content: `
-        window.onload = function() {
-            const canvas = document.getElementById("canvas");
-            const context = canvas.getContext("2d");
-      
-            canvas.width = 400;
-            canvas.height = 400;
-      
-            const update = function() {};
-            const draw = function() {};
-      
-            const frame = function() {
-              update();
-              draw();
-              requestAnimationFrame(frame);
-            };
-          }`
+window.onload = function() {
+  const canvas = document.getElementById("canvas");
+  const context = canvas.getContext("2d");
+
+  canvas.width = 400;
+  canvas.height = 400;
+
+  const update = function() {};
+  const draw = function() {};
+
+  const frame = function() {
+    update();
+    draw();
+    requestAnimationFrame(frame);
+  };
+}`
     },
     {
       name: "style.css",
       content: `
-        html, body {
-          background: #000000;
-        }
-        canvas {
-          display: block;
-          margin: 0 auto;
-          background: #111111;
-        }`
+html, body {
+  background: #000000;
+}
+canvas {
+  display: block;
+  margin: 0 auto;
+  background: #111111;
+}`
     }
   ];
 
